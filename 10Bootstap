@@ -1,0 +1,103 @@
+Bootstrap
+
+https://www.youtube.com/watch?v=otGXryugz20
+https://sass-lang.com/
+
+créer un dossier css à la racine
+créer un dossier scss à la racine  
+créer  un dossier js à la racine et récupérer
+bootstrap.bundle.min.js
+bootstrap.bundle.min.js.map
+
+Récupérer les fichiers de Bootstrap dans SOURCES FILES
+
+
+
+https://getbootstrap.com/docs/5.2/getting-started/download/
+prendre le dossier scss et le coller en entier dans notre projet
+
+
+
+
+dans le html
+
+<link rel="stylesheet" href="css/bootstrap.css"> 
+
+
+après le body
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/scripts.js"></script>
+
+
+dans le ficier scss/_variables.scss à 5min 38
+chercher avec controle F 
+// scss-docs-start theme-color-variables
+changer les couleurs + ctrl S + Watch SAss pour regénérer
+
+
+
+$primary: #750075;
+$secondary: #A300A3;
+$success: #D100D1;
+$info: #FF00FF;
+$light: #FF2EFF;
+$dark: #FF5CFF;
+$danger:#750075;
+$warning:#750075;
+
+$body-bg: #EFD3B5;
+
+
+
+
+
+extension VSCOde à installer
+Live Sass Compiler
+Fichier/Préférences/Paramètres/ Files:Associations
+Modifier dans settings.json
+
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "~/../css/"
+        },
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "~/../css/"
+        }
+    ],
+    "explorer.compactFolders": false,
+    "editor.wordWrap": "on",
+    "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+    },
+    "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "twig": "html"
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "workbench.colorTheme": "Default Dark+",
+    "bracketPairColorizer.depreciation-notice": false,
+    "[php]": {
+    "editor.defaultFormatter": "Sophisticode.php-formatter"
+    },
+    "html.hover.documentation": false,
+    "html.hover.references": false,
+    "settingsSync.ignoredExtensions": [
+    
+    ],
+
+    "files.associations": {
+        "*.html": "twig"
+    },
+    "git.confirmSync": false,
+    "workbench.colorCustomizations": {
+    
+    },
+    
+}
